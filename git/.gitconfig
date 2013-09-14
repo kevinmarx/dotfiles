@@ -1,0 +1,46 @@
+[user]
+	name = Kevin Marx
+	email = kevin.marx@tstmedia.com
+[alias]
+	unstage = reset HEAD
+	aa = add .
+	AA = add -A
+	cm = "!f() { git commit -m \"$*\"; }; f"
+	cp = commit --patch
+	c = commit
+	b = branch
+	br = branch -r
+	s = status
+	st = stash
+	stl = stash list
+	stp = stath pop
+	u = pull
+	p = push
+	d = diff
+	ds = diff --staged
+	m = merge
+	co = checkout
+	pr = pull-request
+	pick = cherry-pick -n -x
+	pickm = cherry-pick
+	st = stash
+	pn = git push -u origin
+	delete = push origin --delete
+	# choose from other local branches you have checked out, and check it out
+  col = "!select choice in $(git branch | grep -v '*'); do echo checking out $choice; git checkout $choice; break; done"
+  # get a list of files in conflict
+  cnf = !git ls-files -u | cut -f 2 | sort -u
+[push]
+  default = tracking
+[core]
+  excludesfile = ~/.gitexcludes
+  editor = vim
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+	ui = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = opendiff
