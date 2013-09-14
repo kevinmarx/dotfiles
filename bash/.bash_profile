@@ -33,16 +33,6 @@ alias snui='b u sport_ngin_ui'
 alias signoff='be signoff'
 alias notify='terminal-notifier -message'
 
-# Directory shortcuts
-
-alias jarvis='cd ~/workspace/kevinmarx/jarvis && ./bin/hubot -a gtalk -n Jarvis'
-alias sport_admin='cd ~/workspace/apps/sport_admin'
-alias ngin_client='cd ~/workspace/apps/ngin_client_node'
-alias stat_ngin='cd ~/workspace/apps/stat_ngin'
-alias ngin='cd ~/workspace/apps/ngin'
-alias user_service='cd ~/workspace/apps/user_service'
-alias sport_ngin_ui='cd ~/workspace/apps/sport_ngin_ui'
-
 # Git shortcuts
 
 alias ga='git add'

@@ -27,14 +27,14 @@
 	pn = git push -u origin
 	delete = push origin --delete
 	# choose from other local branches you have checked out, and check it out
-  col = "!select choice in $(git branch | grep -v '*'); do echo checking out $choice; git checkout $choice; break; done"
-  # get a list of files in conflict
-  cnf = !git ls-files -u | cut -f 2 | sort -u
+        col = "!select choice in $(git branch | grep -v '*'); do echo checking out $choice; git checkout $choice; break; done"
+        # get a list of files in conflict
+        cnf = !git ls-files -u | cut -f 2 | sort -u
 [push]
-  default = tracking
+        default = tracking
 [core]
-  excludesfile = ~/.gitexcludes
-  editor = vim
+        excludesfile = ~/.gitexcludes
+        editor = vim
 [color]
         diff = auto
         status = auto
